@@ -8,10 +8,11 @@
     $semilla2='b8,MC5+$:;';
     //$tClave=md5(sha1(md5($semilla1.$tClave.$semilla2)));
 
-    $server="localhost";
-    $user="root";
-    $pass="catolica";
-    $bd="piramide_customers";
+    //$server="localhost";
+    $server="mysql://uuq9udaawurdnlyo:vqWXOIK2P1U1yhdmMOu9@bleamcorspmyl7wd2a35-mysql.services.clever-cloud.com:3306/bleamcorspmyl7wd2a35";
+    $user="uuq9udaawurdnlyo";
+    $pass="vqWXOIK2P1U1yhdmMOu9";
+    $bd="bleamcorspmyl7wd2a35";
 
     $conexion = mysqli_connect($server, $user, $pass, $bd) or die ("Error en la conexion");
 
