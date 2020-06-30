@@ -1,0 +1,415 @@
+/* General Blueprint Style */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-family: 'bpicons';
+	src:url('../fonts/bpicons/bpicons.eot');
+	src:url('../fonts/bpicons/bpicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/bpicons/bpicons.woff') format('woff'),
+		url('../fonts/bpicons/bpicons.ttf') format('truetype'),
+		url('../fonts/bpicons/bpicons.svg#bpicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+} /* Made with http://icomoon.io/ */
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 100%; padding: 0; margin: 0;}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    color: #47a3da;
+    font-weight: 400;
+    min-height: 900px;
+    background: url(../images/image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.boxes input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.boxes input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #0F2454;
+    background: transparent;
+    outline: none;
+    
+    color: #0F2454;
+    
+}
+
+.boxes input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.boxes input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: darkgreen;
+    color: #fff;
+}
+
+.otro {
+	display: unset;
+	outline: none;
+	height: 40px; 
+	background: darkorange;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+	
+}
+
+.otro:hover {
+
+	background: darkred;
+	color: white;
+}
+
+.otro2 {
+	display: unset;
+	outline: none;
+	height: 40px;
+	width: 200px;
+	background: darkorange;
+	color: white;
+	font-size: 18px;
+	border-radius: 20px;
+	
+}
+
+.otro2:hover {
+
+	background: darkred;
+	color: white;
+}
+
+.otro3 {
+	display: unset;
+	outline: none;
+	height: 25px;
+	text-align: center;
+	width: 500px;
+	background: darkorange;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+	
+}
+
+.otro3:hover {
+
+	background: darkblue;
+	color: white;
+}
+
+.adelete {
+	display: unset;
+	outline: none;
+	height: 25px;
+	text-align: center;
+	width: 500px;
+	background: red;
+	color: white;
+	font-size: 18px;
+	border-radius: 10px;
+	
+}
+
+.adelete:hover {
+
+	background: tomato;
+	color: white;
+}
+
+.normal{
+	color: black;
+	padding: 3px;
+	width: 5%;	
+	
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+}
+
+.recuadrot {
+    border:0px solid black;
+    width:100%;
+    display:inline-block;
+	height:80px;
+	text-align: center;
+	overflow:hidden;
+	color: white;
+  }
+
+  .recuadrot2 {
+    border:0px solid black;
+    width:100%;
+    display:inline-block;
+	height:80px;
+	text-align: center;
+	overflow:hidden;
+	color: black;
+  }
+
+  .recuadrol {
+    border:0px solid black;
+	width:30%;
+	align-items: center;
+    display:inline-block;
+    height:49.5%;
+    overflow:hidden;
+  }
+
+  .recuadrolados {
+    border:0px solid black;
+    width:35%;
+    display:inline-block;
+    height:49.5%;
+    overflow:hidden;
+  }
+
+  
+
+  .backdigit {
+    border:0px solid black;
+    width:40%;
+    display:inline-block;
+	overflow:hidden;
+	height: 350px;
+	background-color: white;
+  }
+
+  .espacio {
+    width:30%;
+    display:inline-block;
+	overflow:hidden;
+  }
+
+.recuadro {
+    border:0px solid black;
+    width:90%;
+    display:inline-block;
+    height:49.5%;
+    overflow:hidden;
+  }
+
+  .recuadro2 {
+    border:0px solid black;
+    width:5.0%;
+    display:inline-block;
+    height:50.0%;
+    overflow:hidden;
+  }
+
+  .table {
+  	background-color: white;
+  	text-align: left;
+  	border-collapse: collapse;
+  	
+	
+  }
+
+  .tabledigitar {
+	text-align: left;
+	border-collapse: collapse;
+	
+  
+}
+
+.tabledigitar td, th{
+	padding: 0px;
+	width: 5%;
+}
+
+
+  td, th{
+	  padding: 20px;
+	  width: 5%;
+  }
+
+  thead{
+  	background-color: #0F2454;
+  	border-bottom: solid 1px #0F362D;
+  	color: #FFFFFF;
+  }
+
+.container > header {
+	width: 90%;
+	max-width: 69em;
+	margin: 0 auto;
+	padding: 1.0em 1.875em 1.875em;
+}
+
+.container > header h1 {
+	font-size: 2.125em;
+	line-height: 1.0;
+	margin: 0 0 0.6em 0;
+	float: left;
+	font-weight: 400;
+}
+
+.container > header > span {
+	display: block;
+	position: relative;
+	z-index: 9999;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5em;
+	padding: 0 0 0.6em 0.1em;
+}
+
+.container > header > span span:after {
+	width: 30px;
+	height: 30px;
+	left: -12px;
+	font-size: 50%;
+	top: -8px;
+	font-size: 75%;
+	position: relative;
+}
+
+.container > header > span span:hover:before {
+	content: attr(data-content);
+	text-transform: none;
+	text-indent: 0;
+	letter-spacing: 0;
+	font-weight: 300;
+	font-size: 110%;
+	padding: 0.8em 1em;
+	line-height: 1.2;
+	text-align: left;
+	left: auto;
+	margin-left: 4px;
+	position: absolute;
+	color: #fff;
+	background: #252d31;
+}
+
+.container > header nav {
+	float: right;
+	text-align: center;
+}
+
+.container > header nav a {
+	display: unset;
+	position: relative;
+	text-align: center;
+	width: 6.5em;
+	height: 2.0em;
+	background: green;
+	margin: 0 0.1em;
+	color: white;
+	font-size: large;
+	border-radius: 10px;
+	outline: none;
+}
+
+.container > header nav a > span {
+	display: none;
+}
+
+.container > header nav a:hover:before {
+	content: attr(data-info);
+	color: #252d31;
+	position: absolute;
+	width: 600%;
+	top: 120%;
+	text-align: right;
+	right: 0;
+	pointer-events: none;
+}
+
+.container > header nav a:hover {
+	background: #252d31;
+}
+
+.bp-icon:after {
+	font-family: 'bpicons';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	text-align: center;
+	color: #47a3da;
+	-webkit-font-smoothing: antialiased;
+}
+
+.container > header nav .bp-icon:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	line-height: 2;
+	text-indent: 0;
+}
+
+.container > header nav a:hover:after {
+	color: #fff;
+}
+
+.bp-icon-next:after {
+	content: "\e000";
+}
+.bp-icon-drop:after {
+	content: "\e001";
+}
+.bp-icon-archive:after {
+	content: "\e002";
+}
+.bp-icon-about:after {
+	content: "\e003";
+}
+.bp-icon-prev:after {
+	content: "\e004";
+}
+
+@media screen and (max-width: 55em) {
+
+	.container > header h1,
+	.container > header nav {
+		float: none;
+	}
+
+	.container > header > span,
+	.container > header h1 {
+		text-align: center;
+	}
+
+	.container > header nav {
+		margin: 0 auto;
+	}
+
+	.container > header > span {
+		text-indent: 30px;
+	}
+}
+
+.logo {
+	display : center;
+	width : auto;
+	height : 30px; 
+	margin : 0;
+	padding : 0;
+	border-radius: 20px;
+}
