@@ -7,7 +7,7 @@
     $semilla2='b8,MC5+$:;';
     $tClave=md5(sha1(md5($semilla1.$tClave.$semilla2)));
 
-    include('conexion.php');
+    include('Conexion.php');
 
     $query = "SELECT usuario, idTipoUsu, u.idRestaurante, r.restaurante FROM usuariospiramide u
                 INNER JOIN restaurantes r ON u.idRestaurante = r.idRestaurante
