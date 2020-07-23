@@ -1,6 +1,7 @@
-<html>
+
+<html> 
 <head>
-    <title> Login </title>
+    <title> Login Tony Roma´s </title>
     <link rel="stylesheet" type="text/css" href="css/style.css">   
 </head>
     <body>
@@ -10,8 +11,8 @@
 	?>
 
     <div class="login-box">
-    <img src="images/logo.png" class="avatar">
-        <h1>Login - Tony Roma's</h1>
+    <img src="images/logoPiramide.jpeg" class="avatar">
+        <h1>Login - Piramide Customers</h1>
             <form>
             <p>User</p>
             <input type="text" name='usu' id='usu' placeholder="Enter Username">

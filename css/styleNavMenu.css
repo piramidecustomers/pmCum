@@ -1,0 +1,14 @@
+.logo {
+	display : center;
+	width : auto;
+	height : 30px; 
+	margin : 0;
+	padding : 0;
+	border-radius: 20px;
+}
+
+li {
+    align-items: inline;
+    align-content: inline;
+    text-align: inline;
+}

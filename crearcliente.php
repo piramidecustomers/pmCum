@@ -13,14 +13,15 @@
     $restaurante = $_SESSION["/78usioILKJ[[]][O"];
     $restaurante = ($restaurante/3908) - 8989;
 
+    $tipoCliente = 1;
     if ($tipoCli == "Normal") $tipoCliente = 1;
-    if ($tipoCli == "Problemático") $tipoCliente = 2;
+    if ($tipoCli == "Delicado") $tipoCliente = 2;
     if ($tipoCli == "Rojo") $tipoCliente = 3;
     
     $server="localhost";
-    $user="root";
-    $pass="catolica";
-    $bd="piramide_customers";
+    $user="id14177438_adminpiramide";
+    $pass="Customers2020_";
+    $bd="id14177438_piramide";
 
     $conexion = mysqli_connect($server, $user, $pass, $bd) or die ("Error en la conexion");
 
@@ -30,13 +31,15 @@
 
     mysqli_set_charset($conexion, "utf8");
 
-    $resultado = mysqli_query($conexion, $query) or die("<script language='javascript'>alert('Ese número ya existe, pruebe con otro.'); window.history.back(-1);</script>" ); 
-
-
+    $resultado = mysqli_query($conexion, $query) or die('Contacte al administrador');
+    //echo $restaurante;
+    
+    
     $close = mysqli_close($conexion) or die("Error en la desconexion");
-    $location = 'Location: MenuN.php';
+    $location = 'Location: CreacionExitosa.php?guardado='.$telefono;
     header($location);
-
+    
     exit;
 
 ?>
+

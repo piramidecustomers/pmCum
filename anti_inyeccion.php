@@ -21,7 +21,7 @@ foreach($archivo as $linea)
 }
 
 
-if ($encontrado==1) header('Location: index.php');
+if ($encontrado==1) header('Location: Login.php');
 else
 {
     //header('Location: digitar.php?id='.$hId.'&op=b');  

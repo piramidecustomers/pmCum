@@ -1,0 +1,53 @@
+/* Diseño para celulares */
+#columna1, #columna2, #columna3 {
+	float:none;
+	width:100%;
+}
+
+/* Diseño para tabletas */ 
+@media screen and (min-width: 800px) {
+	#columna1, #columna2 {
+		float:left;
+		width:50%;
+	}
+}
+
+/* Diseño para PC */ 
+@media screen and (min-width: 1025px) {
+	#columna1, #columna2, #columna3 {
+	float:left;
+	width:33%;
+}
+}
+.Contenido {	
+	
+	justify-content: center;
+	align-items: center;
+	
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../images/image.jpg);
+    
+    background-position: center;
+    font-family: sans-serif;
+}
+
+h2 {
+	color: #fff;
+}
+
+
+.search {
+	
+	justify-content: center;
+	align-items: center;
+	max-width: 400px;
+}
+
+td{
+	background-color : rgb(172, 171, 171);
+	color: #000;
+}

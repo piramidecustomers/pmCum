@@ -19,16 +19,16 @@ body{
 
   .clientes {
     background-color: #fafafa;  
-    width: 1000px;
-    height: 830px;
-    border-radius: 2%;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     align-content: center;
   }
 
   .clientes2 {
     
     background-color: #fafafa;  
-    width: 900px;
+    margin-left: 1rem;
+    margin-right: 1rem;
     text-align: left;
     align-items: center;
   }

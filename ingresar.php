@@ -2,21 +2,16 @@
 
     $tAlias = $_GET["usu"];
     $tClave = $_GET["contra"];
-    //echo ("Hasta aqui todo bien " .$tAlias. " ".$tClave); 
     
     $semilla1='>Nv+m4\V5X';
     $semilla2='b8,MC5+$:;';
-    //$tClave=md5(sha1(md5($semilla1.$tClave.$semilla2)));
+    $tClave=md5(sha1(md5($semilla1.$tClave.$semilla2)));
 
-    //$server="localhost";
-    $server="mysql://uuq9udaawurdnlyo:vqWXOIK2P1U1yhdmMOu9@bleamcorspmyl7wd2a35-mysql.services.clever-cloud.com:3306/bleamcorspmyl7wd2a35";
-    $user="uuq9udaawurdnlyo";
-    $pass="vqWXOIK2P1U1yhdmMOu9";
-    $bd="bleamcorspmyl7wd2a35";
+    include('Conexion.php');
 
-    $conexion = mysqli_connect($server, $user, $pass, $bd) or die ("Error en la conexion");
-
-    $query = "SELECT usuario, idTipoUsu, idRestaurante FROM usuariospiramide WHERE usuario = '$tAlias' AND contrasennia='$tClave'";
+    $query = "SELECT usuario, idTipoUsu, u.idRestaurante, r.restaurante FROM usuariospiramide u
+                INNER JOIN restaurantes r ON u.idRestaurante = r.idRestaurante
+                WHERE u.usuario = '$tAlias' AND contrasennia='$tClave';";
 
     mysqli_set_charset($conexion, "utf8");
 
@@ -33,21 +28,20 @@
         $tipoUsuario = $line['idTipoUsu'];
         $idRestaurante = $line['idRestaurante'];
 
-        if ($tipoUsuario == 1) $_SESSION["IloUxS[]{}Y8jJ"] = "A57iLo0{}}[]{Ll78";
+        $_SESSION["IloUxS[]{}Y8jJ"] = "A57iLo0{}}[]{Ll78";
         $_SESSION["Usuario"] = $line['usuario'];
         $_SESSION["/78usioILKJ[[]][O"] = ($line['idRestaurante'] + 8989) * 3908;
+        $_SESSION["restauranteOnline"] = $line['restaurante'];
+        
+        if($tipoUsuario == 3) $_SESSION["rodartsinimda"] = "sey";
     }
     else {
         unset($_SESSION['w3xS[:Y8hM']);
         session_destroy();
-        header('Location: gmail.com');
+        header('Location: index.php');
     }
 
     $close = mysqli_close($conexion) or die("Error en la desconexion");
-
-    //pg_free_result($result);
-    //pg_close($dbconn);
-    //header('Location: personas.php');
 
     exit;
 
